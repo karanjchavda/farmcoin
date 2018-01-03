@@ -118,7 +118,7 @@ public:
         nDefaultPort = 9333;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1514307483, 1889228, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1514307483, 1889228, 0x1e0ffff0, 1, 100 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x9da18d0bf9658667ce760311cfb02349ec345031301b40f5281e89659cbca4fd"));
         assert(genesis.hashMerkleRoot == uint256S("0xf627085b870225aee81e571f9f5f8864a217a521b58de6447416d0b018e2f3b4"));
@@ -218,7 +218,7 @@ public:
         //vSeeds.emplace_back("seed-b.farmcoin.loshan.co.uk", true);
         //vSeeds.emplace_back("dnsseed-testnet.thrasher.io", true);
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,30);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
         base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,58);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,239);
